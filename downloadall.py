@@ -7,7 +7,7 @@ from os import path
 import logging
 
 logging.basicConfig(filename='download.log',
-                    encoding='utf-8', level=logging.INFO)
+                    level=logging.INFO)
 
 with open('login.txt', 'rt') as f:
     username, password = f.read().strip().splitlines()

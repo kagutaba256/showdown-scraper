@@ -1,1 +1,1 @@
-docker-compose up -d --scale app=10
+docker-compose up -d --scale app=40

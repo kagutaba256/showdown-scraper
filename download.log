@@ -1,0 +1,24 @@
+INFO:root:started
+INFO:showdown.server:Requesting server host from https://pokemonshowdown.com/servers/showdown.json
+INFO:showdown.client:Using websocket at ws://sim3.psim.us:8000/showdown/734/hpshhnpn/websocket
+INFO:showdown.client:Connected on ws://sim3.psim.us:8000/showdown/734/hpshhnpn/websocket
+INFO:showdown.client:>>> Sending:
+['|/cmd roomlist ']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8randombattle-1267685784']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8randombattle-1267685766']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8randomdoublesbattle-1267685735']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8anythinggoes-1267685676']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8monotyperandombattle-1267685744']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8randombattle-1267685673']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8monotyperandombattle-1267685669']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8randombattle-1267685642']
+INFO:showdown.client:>>> Sending:
+['|/join battle-gen8randombattle-1267685745']

@@ -4,11 +4,15 @@ and saves replays.
 """
 import showdown
 from os import path
+import logging
+
+logging.basicConfig(filename='download.log',
+                    encoding='utf-8', level=logging.INFO)
 
 with open('login.txt', 'rt') as f:
     username, password = f.read().strip().splitlines()
 
-print("started")
+logging.info("started")
 
 
 class ReplayClient(showdown.Client):
@@ -20,7 +24,7 @@ class ReplayClient(showdown.Client):
     async def on_receive(self, room_id, inp_type, params):
         if inp_type == 'win':
             if path.exists('/data/' + room_id):
-                print('/data/' + room_id + ' already exists')
+                logging.info('/data/' + room_id + ' already exists')
             else:
                 with open('/data/' + room_id, 'wt') as f:
                     f.write('\n'.join(self.rooms[room_id].logs))
